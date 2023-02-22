@@ -1,0 +1,40 @@
+@import "font.css";
+
+.headerLinks {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.headerLinks:hover {
+    background-color: whitesmoke;
+}
+
+.mainHeader {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 8px 20px;
+}
+
+.headerContent * {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* MOBILE RESPONSIVENESS BEGIN */
+
+@media only screen and (max-width: 800px) {
+    .headerContent {
+        padding: 0;
+    }
+}
+
+/* MOBILE RESPONSIVENESS END */

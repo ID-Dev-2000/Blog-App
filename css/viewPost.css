@@ -1,0 +1,78 @@
+@import "font.css";
+
+body {
+    font-family: 'Roboto', sans-serif
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postMain {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.postHeader * {
+    margin: 3px 5px;
+}
+
+.postContent {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    width: 700px;
+    height: 350px;
+    border-top: 1px solid black;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 17%, rgba(245,245,245,1) 68%);
+}
+
+.entireCommentSection {
+    width: 700px;
+    height: 175px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    border-top: 1px solid black;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 17%, rgba(245,245,245,1) 68%);
+}
+
+.commentParent {
+    padding: 0px 16px;
+}
+
+.commentContent {
+    height: 90px;
+    margin-top: 6px;
+    padding: 6px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+.commentButton:hover {
+    cursor: pointer;
+    appearance: auto;
+}
+
+/* MOBILE RESPONSIVENESS BEGIN */
+
+@media only screen and (max-width: 800px) {
+    .postContent, .entireCommentSection {
+        width: 90vw;
+    }
+}
+
+/* MOBILE RESPONSIVENESS END */

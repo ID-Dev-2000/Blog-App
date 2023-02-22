@@ -1,0 +1,59 @@
+/* TABLE SECTION BEGIN */
+table {
+    width: 80%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+.actionColumn {
+    width: 220px;
+}
+
+.actionColumnItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: separate;
+}
+
+.mainTable {
+    margin-top: 10px;
+}
+/* TABLE SECTION END */
+
+/* MOBILE RESPONSIVENESS BEGIN */
+
+@media only screen and (max-width: 800px) {
+    .postContent, .entireCommentSection {
+        width: 90%;
+        overflow-x: auto;
+    }
+
+    .actionColumn {
+        width: 90px;
+        overflow-x: auto;
+    }
+
+    .actionColumnItems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-collapse: separate;
+        flex-direction: column;
+    }
+
+    td {
+        padding: 0;
+    }
+}
+
+/* MOBILE RESPONSIVENESS END */

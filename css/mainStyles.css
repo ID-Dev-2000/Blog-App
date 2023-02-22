@@ -1,0 +1,149 @@
+@import "font.css";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Multiple names for the same CSS for readability purposes */
+.inputForm, .centeredColumn, .addPostForm, .mainHomePageParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* POST MAIN, DESKTOP BEGIN */
+.postParent {
+    width: 700px;
+    height: 150px;
+    border: 1px solid black;
+}
+/* POST MAIN, DESKTOP END */
+
+/* POST HEADER START */
+.postHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 15px 0 15px;
+    border-bottom: 1px solid black;
+}
+
+.postTitleHeaderContent {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.viewPostButton {
+    height: 40px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.viewPostButton:active {
+    background-color: gainsboro;
+}
+/* POST HEADER END */
+
+/* POST CONTENT BEGIN */
+.postParent {
+    overflow: hidden;
+    background: rgb(245,245,245);
+    background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 10%);
+}
+
+.postContent{
+    padding: 5px 0 0 15px;
+}
+/* POST CONTENT END */
+
+/* TAG SECTION BEGIN */
+.tagSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tagMainParent {
+    display: flex;
+    padding-left: 15px;
+}
+
+.tagItem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: auto 0 auto 5px;
+    padding: 3px 6px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.tagItem:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.tagItemParent {
+    display: flex;
+}
+
+/* TAGS ON addPost.php BEGIN */
+.addTagSelect {
+    display: flex;
+}
+
+.addTagLabel {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+/* TAGS ON addPost.php END */
+
+/* TAG SECTION END */
+
+/* PAGINATION SECTION BEGIN */
+.pageLink {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 3px;
+    margin-right: 5px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    color: black;
+    width: 20px;
+    height: 20px;
+}
+
+.pageLink:active {
+    background-color: gainsboro;
+}
+
+.paginationDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+/* PAGINATION SECTION END */
+
+/* MOBILE RESPONSIVENESS BEGIN */
+
+@media only screen and (max-width: 800px) {
+    .postParent {
+        width: 90vw;
+    }
+}
+
+/* MOBILE RESPONSIVENESS END */
